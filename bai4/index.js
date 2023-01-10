@@ -1,13 +1,10 @@
 document.getElementById("click").onclick = function(){
     let alert = document.getElementById("alert");
-    alert.classList.add('d-block')
     for(let i = 1;i <= 10;i++){
         if((i % 2) === 0){
-            alert.innerHTML+= `div lẻ`
-            alert.classList.add("alert-danger")
+            alert.innerHTML+= `<div class="alert bg-info m-0" id="alert">div chẵn</div>`
         }else{
-            alert.innerHTML+= `div chẵn`
-            alert.classList.add("alert-primary")
+            alert.innerHTML+= `<div class="alert bg-danger m-0" id="alert">div lẻ</div>`
         }
     }
 }
